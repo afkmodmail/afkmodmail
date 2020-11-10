@@ -24,7 +24,7 @@ class ConfigManager:
 
     public_keys = {
         # activity
-        # "twitch_url": "https://www.twitch.tv/discordmodmail/",
+        "DM to contact a Moderator!",
         # bot settings
         "main_category_id": None,
         "fallback_category_id": None,
@@ -78,9 +78,9 @@ class ConfigManager:
 
     private_keys = {
         # bot presence
-        "activity_message": "",
-        "activity_type": None,
-        "status": None,
+        "activity_message": "DM to contact a Moderator",
+        "activity_type": Activity,
+        "status": discord.Status.idle,
         # dm_disabled 0 = none, 1 = new threads, 2 = all threads
         # TODO: use enum
         "dm_disabled": 0,
