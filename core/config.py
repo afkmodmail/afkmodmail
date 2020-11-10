@@ -24,7 +24,7 @@ class ConfigManager:
 
     public_keys = {
         # activity
-        "DM to contact a Moderator!",
+        # "DM to contact a Moderator!",
         # bot settings
         "main_category_id": None,
         "fallback_category_id": None,
