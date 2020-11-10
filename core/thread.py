@@ -356,7 +356,7 @@ class Thread:
 
         embed.title = user
 
-        event = "Thread Closed as Scheduled" if scheduled else "Thread Closed"
+        event = "Thread Closed as Scheduled" if scheduled else "AFK Arena | This thread is now closed"
         # embed.set_author(name=f"Event: {event}", url=log_url)
         embed.set_footer(text=f"{event} by {_closer}")
         embed.timestamp = datetime.utcnow()
