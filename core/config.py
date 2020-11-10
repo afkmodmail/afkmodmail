@@ -24,13 +24,13 @@ class ConfigManager:
 
     public_keys = {
         # activity
-        "twitch_url": "https://www.twitch.tv/discordmodmail/",
+        # "twitch_url": "https://www.twitch.tv/discordmodmail/",
         # bot settings
         "main_category_id": None,
         "fallback_category_id": None,
         "prefix": "?",
         "mention": "@here",
-        "main_color": str(discord.Color.blurple()),
+        "main_color": str(discord.Color.greyple()),
         "error_color": str(discord.Color.red()),
         "user_typing": False,
         "mod_typing": False,
@@ -49,12 +49,12 @@ class ConfigManager:
         "thread_auto_close_silently": False,
         "thread_auto_close": isodate.Duration(),
         "thread_auto_close_response": "This thread has been closed automatically due to inactivity after {timeout}.",
-        "thread_creation_response": "The staff team will get back to you as soon as possible.",
-        "thread_creation_footer": "Your message has been sent",
-        "thread_self_closable_creation_footer": "Click the lock to close the thread",
-        "thread_creation_title": "Thread Created",
-        "thread_close_footer": "Replying will create a new thread",
-        "thread_close_title": "Thread Closed",
+        "thread_creation_response": "Thank you for contacting AFK Mod Mail, a moderator will message you when available.",
+        "thread_creation_footer": "Your message has been sent!",
+        "thread_self_closable_creation_footer": "Click the lock reaction to close the thread.",
+        "thread_creation_title": "AFK Arena Mod Mail",
+        "thread_close_footer": "Replying after close will create a new mail.",
+        "thread_close_title": "This mod mail has been closed.",
         "thread_close_response": "{closer.mention} has closed this Modmail thread.",
         "thread_self_close_response": "You have closed this Modmail thread.",
         "thread_move_title": "Thread Moved",
@@ -67,8 +67,8 @@ class ConfigManager:
         "disabled_current_thread_response": "We are not accepting any messages.",
         "disabled_current_thread_footer": "Please try again later...",
         # moderation
-        "recipient_color": str(discord.Color.gold()),
-        "mod_color": str(discord.Color.green()),
+        "recipient_color": str(discord.Color.from_rgb(172, 219, 136)),
+        "mod_color": str(discord.Color.blurple()),
         "mod_tag": None,
         # anonymous message
         "anon_username": None,
