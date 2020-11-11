@@ -381,7 +381,7 @@ class Modmail(commands.Cog):
 
         now = datetime.utcnow()
 
-        close_after = (after.dt - now).total_seconds(10) if after else 0
+        close_after = (after.dt - now).total_seconds() if after else 0
         message = after.arg if after else None
         silent = str(message).lower() in {"silent", "silently"}
         cancel = str(message).lower() == "cancel"
