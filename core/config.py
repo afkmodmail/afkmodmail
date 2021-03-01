@@ -25,7 +25,7 @@ class ConfigManager:
 
     public_keys = {
         # activity
-        "twitch_url": "https://www.twitch.tv/discordmodmail/",
+        "twitch_url": "",
         # bot settings
         "main_category_id": None,
         "fallback_category_id": None,
@@ -78,9 +78,9 @@ class ConfigManager:
 
     private_keys = {
         # bot presence
-        "activity_message": "",
-        "activity_type": None,
-        "status": None,
+        "activity_message": "lalala",
+        "activity_type": discord.Game,
+        "status": discord.status.online,
         # dm_disabled 0 = none, 1 = new threads, 2 = all threads
         # TODO: use enum
         "dm_disabled": 0,
