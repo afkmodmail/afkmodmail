@@ -79,7 +79,7 @@ class ConfigManager:
     private_keys = {
         # bot presence
         "activity_message": "Test",
-        "activity_type": None,
+        "activity_type": discord.Game,
         "status": discord.Status.online,
         # dm_disabled 0 = none, 1 = new threads, 2 = all threads
         # TODO: use enum
